@@ -6141,26 +6141,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\msingh\\.nuget\\packages\\": {}
+    "/Users/martandsingh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\trinet.com\\trinet.com\\trinet.com\\trinet.com.csproj",
+      "projectUniqueName": "/Users/martandsingh/Documents/Business/trinep.com/trinet.com.csproj",
       "projectName": "trinet.com",
-      "projectPath": "D:\\trinet.com\\trinet.com\\trinet.com\\trinet.com.csproj",
-      "packagesPath": "C:\\Users\\msingh\\.nuget\\packages\\",
-      "outputPath": "D:\\trinet.com\\trinet.com\\trinet.com\\obj\\",
+      "projectPath": "/Users/martandsingh/Documents/Business/trinep.com/trinet.com.csproj",
+      "packagesPath": "/Users/martandsingh/.nuget/packages/",
+      "outputPath": "/Users/martandsingh/Documents/Business/trinep.com/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\msingh\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/martandsingh/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6204,7 +6202,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.300/RuntimeIdentifierGraph.json"
       }
     }
   }
