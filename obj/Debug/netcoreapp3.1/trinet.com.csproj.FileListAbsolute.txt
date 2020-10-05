@@ -226,3 +226,5 @@ D:/trinet.com/trinet.com/trinet.com/obj/Debug/netcoreapp3.1/Razor/Views/Contact/
 /Users/martandsingh/Documents/Business/trinep.com/obj/Debug/netcoreapp3.1/trinet.com.dll
 /Users/martandsingh/Documents/Business/trinep.com/obj/Debug/netcoreapp3.1/trinet.com.pdb
 /Users/martandsingh/Documents/Business/trinep.com/obj/Debug/netcoreapp3.1/trinet.com.genruntimeconfig.cache
+/Users/martandsingh/Documents/Business/trinep.com/obj/Debug/netcoreapp3.1/Razor/Views/Disclaimer/PrivacyPolicy.cshtml.g.cs
+/Users/martandsingh/Documents/Business/trinep.com/obj/Debug/netcoreapp3.1/Razor/Views/Disclaimer/TermCondition.cshtml.g.cs

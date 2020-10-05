@@ -5,15 +5,16 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta name=”robots” content="index, follow">
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- Site Metas -->
-    <title>Trinep IT Services : Web Development - SEO - Data Analysis</title>
-    <meta name="keywords" content="trinep, Web development, data analysis, website, SEO, online, business, nepal, ">
-    <meta name="description" content="Trinep helps you to get onboard with the online world which will help you to grow your business and reach.">
-    <meta name="author" content="Trinep IT Services">
+    <title>Trinep.com - Website, Data Analysis, Mobile App, SEO</title>
+    <meta name="keywords" content="Trinep, Website development, SEO, Dubai, Nepal, Data Analysis, IT Services, Mobile App, Designing, Digital Marketing">
+    <meta name="description" content="Trinep.com helps you to build attractive websites, mobile apps. We also help users in SEO process. We are also involved in data analysis.">
+    <meta name="geo.placename" CONTENT="Dubai, UAE">
+    <meta name="geo.region" CONTENT="AE-DU">
 
     <!-- Site Icons -->
     <link rel="shortcut icon" href="#" type="image/x-icon" />
@@ -42,7 +43,7 @@
     <!-- LOADER -->
     <div id="preloader">
         <div class="loader">
-            <img src="~/images/loader.gif" alt="#" />
+            <img alt="trinep-loader" src="~/images/loader.gif"  />
         </div>
     </div>
     <!-- end loader -->
@@ -51,28 +52,45 @@
     <header class="top-header">
         <nav class="navbar header-nav navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/Home"><img src="/img/logo.png" alt="image"></a>
+                <a class="navbar-brand" href="/Home"><img src="/img/logo.png" alt="trinep-logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link active" href="/Home">Home</a></li>
-                        <li><a class="nav-link" href="/About">Aboutus</a></li>
-                        <li><a class="nav-link" href="/Services">Services</a></li>
-                        @*<li><a class="nav-link" href="#">Blog</a></li>*@
-                        <li><a class="nav-link" href="/Contact">Contact us</a></li>
-                        @*<li><a class="nav-link active" style="background:#f2184f;color:#fff;" href="#">Sinup now</a></li>*@
-                    </ul>
-                </div>
+                @{
+                    
+                    if (Context.Request.Path.ToString().ToLower().Contains("disclaimer"))
+                    {
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                            <ul class="navbar-nav">
+                                <li><a hreflang="en-gb" lang="en-gb" class="nav-link active a_trinep_home" href="/Home">Home</a></li>
+                                
+                            </ul>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                            <ul class="navbar-nav">
+                                <li><a hreflang="en-gb" lang="en-gb" class="nav-link active a_trinep_home" href="#trinep_home">Home</a></li>
+                                <li><a hreflang="en-gb" lang="en-gb" class="nav-link a_trinep_aboutus" href="#trinep_aboutus">About Us</a></li>
+                                <li><a hreflang="en-gb" lang="en-gb" class="nav-link a_trinep_services" href="#trinep_services">Services</a></li>
+                                <li><a hreflang="en-gb" lang="en-gb" class="nav-link a_trinep_team" href="#trinep_services">Our Team</a></li>
+                                @*<li><a class="nav-link" href="#">Blog</a></li>*@
+                                <li><a hreflang="en-gb" lang="en-gb" class="nav-link a_trinep_contact" href="#trinep_contact">Contact us</a></li>
+                                @*<li><a class="nav-link active" style="background:#f2184f;color:#fff;" href="#">Sinup now</a></li>*@
+                            </ul>
+                        </div>
+                    }
+                }
+
                 @*<div class="search-box">
-                    <input type="text" class="search-txt" placeholder="Search">
-                    <a class="search-btn">
-                        <img src="~/images/search_icon.png" alt="#" />
-                    </a>
-                </div>*@
+            <input type="text" class="search-txt" placeholder="Search">
+            <a class="search-btn">
+                <img src="~/images/search_icon.png" alt="#" />
+            </a>
+        </div>*@
             </div>
         </nav>
     </header>
@@ -80,11 +98,11 @@
     @RenderBody()
  
     <!-- Start Footer -->
-    <footer class="footer-box">
+    <footer id="trinep_contact" class="footer-box">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 margin-bottom_30">
-                    <img src="~/img/f_logo.png" alt="#" />
+                    <img src="~/img/f_logo.png" alt="trinep-logo-img" />
                 </div>
                 <div class="col-xl-6 white_fonts">
                     <div class="row">
@@ -93,7 +111,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="full icon">
-                                <img src="~/images/social1.png">
+                                <img alt="trinep-social-fb" src="~/images/social1.png">
                             </div>
                             <div class="full white_fonts">
                                 <p>
@@ -104,23 +122,21 @@
                         </div>
                         <div class="col-md-5">
                             <div class="full icon">
-                                <img src="~/images/social2.png">
+                                <img alt="trinep-social-img" src="~/images/social2.png">
                             </div>
                             <div class="full white_fonts">
                                 <p>
-                                    consultation@gmail.com
-                                    <br>consultation@gmail.com
+                                    martandsays@gmail.com
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="full icon">
-                                <img src="~/images/social3.png">
+                                <img alt="trinep-social-img"  src="~/images/social3.png">
                             </div>
                             <div class="full white_fonts">
                                 <p>
-                                    +7586656566
-                                    <br>+7586656566
+                                    +971-509185250
                                 </p>
                             </div>
                         </div>
@@ -141,17 +157,18 @@
                             <div class="footer_blog footer_menu">
                                 <h3>Menus</h3>
                                 <ul>
-                                    <li><a href="/Home">Home</a></li>
-                                    <li><a href="/About">About Us</a></li>
-                                    <li><a href="/Services">Services</a></li>
+                                    <li><a class="a_trinep_home" href="#">Home</a></li>
+                                    <li><a class="a_trinep_aboutus" href="#">About Us</a></li>
+                                    <li><a class="a_trinep_services" href="#">Services</a></li>
                                     @*<li><a href="#">Blog</a></li>*@
-                                    <li><a href="/Contact">Contact us</a></li>
+                                    <li><a class="a_trinep_contact" href="#">Contact us</a></li>
                                 </ul>
                             </div>
-                            <div class="footer_blog recent_post_footer">
-                                <h3>Recent Post</h3>
-                                <p>Participate in staff meetings manage dedicated to marketing November 25, 2019</p>
-                            </div>
+                            <!-- <div class="footer_blog recent_post_footer">
+         <h3>Recent Post</h3>
+         <p>Participate in staff meetings manage dedicated to marketing November 25, 2019</p>
+     </div>
+        -->
                         </div>
                         <div class="col-md-6">
                             <div class="footer_blog full">
@@ -177,10 +194,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="crp">© 2019 Business . All Rights Reserved.</p>
+                    <p class="crp">© 2020 Trinep.com. All Rights Reserved.</p>
                     <ul class="bottom_menu">
-                        <li><a href="#">Term of Service</a></li>
-                        <li><a href="#">Privacy</a></li>
+                        <li><a target="_blank" href="/Disclaimer/TermCondition">Term & Conditions</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -303,6 +320,38 @@
                 options = $.extend({}, options || {}, $this.data('countToOptions') || {});
                 $this.countTo(options);
             }
+        });
+
+
+
+        $(".a_trinep_home").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#trinep_home").offset().top
+            }, 200);
+        });
+
+        $(".a_trinep_aboutus").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#trinep_aboutus").offset().top
+            }, 200);
+        });
+
+        $(".a_trinep_contact").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#trinep_contact").offset().top
+            }, 200);
+        });
+
+        $(".a_trinep_services").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#trinep_services").offset().top
+            }, 200);
+        });
+
+        $(".a_trinep_team").click(function () {
+            $('html, body').animate({
+                scrollTop: $("#trinep_team").offset().top
+            }, 200);
         });
     </script>
 </body>

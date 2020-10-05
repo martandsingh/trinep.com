@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{6AAA70A4-24A6-472F-8BFF-3DF5AF7A9E7A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Pages/Index.cshtml" Line="8" Column="5" />
-      <File FileName="Startup.cs" Line="34" Column="30" />
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="Pages/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Pages/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Properties/launchSettings.json" Line="28" Column="7" />
-      <File FileName="Dockerfile" Line="1" Column="1" />
+      <File FileName="Views/Home/Index.cshtml" Line="4" Column="31" />
+      <File FileName="Controllers/Disclaimer.cs" Line="20" Column="10" />
+      <File FileName="Views/Disclaimer/TermCondition.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Shared/_Layout.cshtml" Line="183" Column="70" />
+      <File FileName="Views/About/Index.cshtml" Line="13" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,11 +14,20 @@
             <Node name="trinet.com" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Shared" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
               </Node>
               <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="About" expanded="True" />
+                <Node name="Disclaimer" expanded="True" />
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="img" expanded="True" />
+              </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
